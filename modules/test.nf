@@ -25,3 +25,13 @@ process getRefFiles2 {
     wget wget https://github.com/nextflow-io/nextflow/releases/download/v22.12.0-edge/nextflow-22.12.0-edge-all -O nextflow.bin
     """
 }
+
+process testing {
+    output:
+    path("out.txt"), emit: txt
+
+    script:
+    """
+    echo 'this is a test' > out.txt
+    """
+}
