@@ -12,6 +12,7 @@ process test {
 
     script:
     """
+    sleep 600
     echo 'this is a test2' > out.txt
     """
 }
