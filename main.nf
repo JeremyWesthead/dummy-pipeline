@@ -3,9 +3,6 @@
 // enable dsl2
 nextflow.enable.dsl=2
 
-// import subworkflows
-include {Testing} from './workflows/test.nf'
-
 process test {
     output:
     path("out.txt"), emit: txt
