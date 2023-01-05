@@ -4,6 +4,7 @@ nextflow.enable.dsl = 2
 
 // import modules
 include {getRefFiles} from '../modules/test.nf'
+include {getRefFiles2} from '../modules/test.nf'
 
 workflow Testing {
     main:
