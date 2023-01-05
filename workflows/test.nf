@@ -7,5 +7,5 @@ include {getRefFiles} from '../modules/test.nf'
 
 workflow Testing {
     main:
-        getRefFiles()
+        getRefFiles2()
 }

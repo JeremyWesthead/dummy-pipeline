@@ -15,3 +15,13 @@ process getRefFiles {
     wget $bedURL -O ref.bed
     """
 }
+
+process getRefFiles2 {
+    output:
+    path("nextflow.bin"), emit: bin
+
+    script:
+    """
+    wget wget https://github.com/nextflow-io/nextflow/releases/download/v22.12.0-edge/nextflow-22.12.0-edge-all -O nextflow.bin
+    """
+}
