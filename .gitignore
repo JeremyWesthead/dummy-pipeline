@@ -1,0 +1,6 @@
+.nextflow*
+dag.dot
+*.html
+trace.txt*
+.command*
+work/**
