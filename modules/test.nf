@@ -2,6 +2,7 @@ process getRefFiles {
     /**
     * fetches reference file from 
     */
+    label 'viridian'
 
     output:
     path("ref.fasta"), emit: fasta
